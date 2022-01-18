@@ -27,7 +27,8 @@ let mahasiswa2 = {
 
 
 // Function Declaration
-// Keuntungannya kalian tidak
+// Keuntungannya kalian tidak perlu membuat duplikat dari objectnya
+// Nanti kalo mau bikin objectnya 2 atau 3 tinggan instansiasinya yang berulangkali
 
 
 
