@@ -43,6 +43,8 @@ function Mahasiswa(nama, energi) {
         this.energi += porsi;
         console.log(`Selamat makan, ${this.nama}. Energimu sekarang menjadi ${this.energi}.`);
     }
+
+    return mahasiswa;
 }
 
 
