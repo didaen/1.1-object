@@ -3,7 +3,13 @@
 let mahasiswa = {
     //property
     nama: 'Sandhika',
-    energy: 10
+    energi: 10,
+
+    //method
+    makan: function (porsi) {
+        this.energi = this.energi + porsi;
+        console.log(`Selamat makan, ${this.nama}! Energimu sekarang menjadi ${this.energi}.`);
+    }
 }
 
 
