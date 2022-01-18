@@ -30,7 +30,20 @@
 // Keuntungannya kalian tidak perlu membuat duplikat dari objectnya
 // Nanti kalo mau bikin objectnya 2 atau 3 tinggan instansiasinya yang berulangkali
 
+// Ini kita membuat BluE Print nya
+function Mahasiswa(nama, energi) {
+    // Awalnya sama yaitu dengan membuat object KOSONGAN
+    let mahasiswa = {};
+    mahasiswa.nama = nama;
+    mahasiswa.energi = energi;
 
+    // Ini juga mirip tapi ini bentuknya jadi seperti class
+    // Pake . (dot)
+    mahasiswa.makan = function (porsi) {
+        this.energi += porsi;
+        console.log(`Selamat makan, ${this.nama}. Energimu sekarang menjadi ${this.energi}.`);
+    }
+}
 
 
 
