@@ -47,6 +47,8 @@ function Mahasiswa(nama, energi) {
     return mahasiswa;
 }
 
+// INISIASI OBJECT
+let dida = Mahasiswa("Dida", 10);
 
 
 
