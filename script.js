@@ -87,6 +87,11 @@ function Mahasiswa(nama, energi) {
     // return mahasiswa;
 }
 
+// Untuk inisiasi, seperti inisiasi pada Function Declaration
+// Namun untuk Constructor Function ini perlu menambahkan keyword di depan
+// Apabila tanpa keyword new, maka dia akan mencari functon declaration yang memiliki array kosong dan return
+
+let = new Mahasiswa('Dida', 20);
 
 
 
