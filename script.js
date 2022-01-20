@@ -63,8 +63,8 @@
 
 // Constructor Function
 function Mahasiswa(nama, energi) {
-    // Awalnya sama yaitu dengan membuat object KOSONGAN
-    let mahasiswa = {};
+    // Pada constructor function, kita tidak memerlukan deklarasi array kosong
+    // let mahasiswa = {};
     mahasiswa.nama = nama;
     mahasiswa.energi = energi;
 
@@ -81,7 +81,8 @@ function Mahasiswa(nama, energi) {
         console.log(`Hallo ${this.nama}, selamat bermain! Energimu sekarang tinggal ${this.energi}.`);
     }
 
-    return mahasiswa;
+    // Pada Constructor Function ini kita juga tidak memerlukan return
+    // return mahasiswa;
 }
 
 
