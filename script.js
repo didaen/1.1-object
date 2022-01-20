@@ -47,7 +47,7 @@ function Mahasiswa(nama, energi) {
     // Membuat method main yang akan mengurangi energi
     mahasiswa.main = function (jam) {
         this.energi -= jam;
-        console.log(`Hallo ${this.nama}, selamat bermain! Energimu sekarang tinggal ${energi}.`);
+        console.log(`Hallo ${this.nama}, selamat bermain! Energimu sekarang tinggal ${this.energi}.`);
     }
 
     return mahasiswa;
