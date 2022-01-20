@@ -65,18 +65,20 @@
 function Mahasiswa(nama, energi) {
     // Pada constructor function, kita tidak memerlukan deklarasi array kosong
     // let mahasiswa = {};
-    mahasiswa.nama = nama;
-    mahasiswa.energi = energi;
+
+    // Selain itu mahasiswa ini diganti menjadi this
+    this.nama = nama;
+    this.energi = energi;
 
     // Ini juga mirip tapi ini bentuknya jadi seperti class
     // Pake . (dot)
-    mahasiswa.makan = function (porsi) {
+    this.makan = function (porsi) {
         this.energi += porsi;
         console.log(`Selamat makan, ${this.nama}. Energimu sekarang menjadi ${this.energi}.`);
     }
 
     // Membuat method main yang akan mengurangi energi
-    mahasiswa.main = function (jam) {
+    this.main = function (jam) {
         this.energi -= jam;
         console.log(`Hallo ${this.nama}, selamat bermain! Energimu sekarang tinggal ${this.energi}.`);
     }
@@ -84,7 +86,6 @@ function Mahasiswa(nama, energi) {
     // Pada Constructor Function ini kita juga tidak memerlukan return
     // return mahasiswa;
 }
-
 
 
 
